@@ -1,0 +1,26 @@
+const uint32_t anim01[][4] = {
+	{
+		0x555aaa55,
+		0x5aaa555a,
+		0xaa555aaa,
+		50
+	},
+	{
+		0xaaa555aa,
+		0xa555aaa5,
+		0x55aaa555,
+		50
+	},
+	{
+		0x555aaa55,
+		0x5aaa555a,
+		0xaa555aaa,
+		50
+	},
+	{
+		0xaaa555aa,
+		0xa555aaa5,
+		0x55aaa555,
+		50
+	}
+};
