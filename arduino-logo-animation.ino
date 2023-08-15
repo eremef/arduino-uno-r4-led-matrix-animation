@@ -1,19 +1,27 @@
 #include "Arduino_LED_Matrix.h"
-#include "animation.h"
+#include "logo01.h"
+#include "logo02.h"
+#include "logo03.h"
 
 ArduinoLEDMatrix matrix;
+const uint32_t length = 10000; //10 secs
 
 void setup() {
-  Serial.begin(115200);
-  // you can also load frames at runtime, without stopping the refresh
-  matrix.loadSequence(animation);
-  matrix.begin();
-  // turn on autoscroll to avoid calling next() to show the next frame; the paramenter is in milliseconds
-  // matrix.autoscroll(300);
-  matrix.play(true);
+    matrix.begin();
+    matrix.play(true); 
+}
+
+void play(){
+  matrix.loadSequence(logo01);
+  delay(length);
+
+  matrix.loadSequence(logo02);
+  delay(length);
+
+  matrix.loadSequence(logo03);
+  delay(length); 
 }
 
 void loop() {
-  delay(500);
-  Serial.println(millis());
+  play();  
 }
