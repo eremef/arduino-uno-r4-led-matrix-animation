@@ -1,4 +1,4 @@
-# Arduino Uno R4 LED Matrix logo animations
+# Arduino Uno R4 LED Matrix logo and some other animations
 
 Animations made with https://ledmatrix-editor.arduino.cc
 
