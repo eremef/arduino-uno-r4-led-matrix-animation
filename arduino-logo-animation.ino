@@ -6,6 +6,10 @@
 #include "anim02.h"
 #include "anim03.h"
 #include "anim04.h"
+#include "anim05.h"
+#include "anim06.h"
+#include "anim07.h"
+#include "anim08.h"
 
 const uint32_t fullOff[][4] = {
   {
@@ -46,6 +50,18 @@ void play(){
 
   matrix.loadSequence(anim04);
   delay(length);   
+
+  matrix.loadSequence(anim05);
+  delay(length);   
+
+  matrix.loadSequence(anim06);
+  delay(length*1.2);
+
+  matrix.loadSequence(anim07);
+  delay(length);  
+
+  matrix.loadSequence(anim08);
+  delay(length);    
 }
 
 void loop() {
